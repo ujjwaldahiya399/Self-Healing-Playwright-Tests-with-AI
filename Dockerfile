@@ -5,14 +5,13 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Chromium and its system dependencies
-RUN playwright install chromium
 RUN playwright install-deps chromium
 
 COPY . .
 
-# Non-root user
 RUN useradd --create-home appuser
 USER appuser
+
+RUN playwright install chromium
 
 CMD ["python", "tests/test_login.py"]

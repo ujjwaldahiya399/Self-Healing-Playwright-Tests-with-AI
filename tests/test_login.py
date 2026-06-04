@@ -74,7 +74,7 @@ def test_login():
         # Launch Chromium browser.
         # headless=False means the browser window is VISIBLE so you can watch it run.
         # Change to headless=True if you want it to run silently in the background.
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
 
         # Open a new browser page (tab).
         page = browser.new_page()
