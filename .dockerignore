@@ -1,0 +1,12 @@
+.env
+__pycache__
+*.pyc
+.git
+*.md
+.DS_Store
+node_modules/
+venv/
+healed_selectors*.json
+package.json
+package-lock.json
+.gitignore
