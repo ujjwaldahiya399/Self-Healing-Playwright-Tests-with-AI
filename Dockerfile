@@ -9,7 +9,7 @@ RUN playwright install-deps chromium
 
 COPY . .
 
-RUN useradd --create-home appuser
+RUN useradd --create-home appuser && chown -R appuser:appuser /app
 USER appuser
 
 RUN playwright install chromium
