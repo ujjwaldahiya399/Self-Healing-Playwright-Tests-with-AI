@@ -7,6 +7,19 @@ the test, and continues execution.
 
 ---
 
+# Self-Healing Playwright Tests with AI
+
+An AI-powered test automation framework that automatically recovers from broken 
+selectors — without any manual intervention. When a UI element changes and a test 
+fails to find it, the AI analyzes the page and finds the correct selector, heals 
+the test, and continues execution.
+
+## Demo
+
+![Demo](demo.gif)
+
+---
+
 ## The Problem It Solves
 
 Test brittleness is one of the biggest pain points in SDET work. When developers 
